@@ -4,7 +4,7 @@
   "description": "Professional Currency Converter API Backend",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm ci && npm run typecheck && tsc",
+    "build": "npm install --include=dev && tsc",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "typecheck": "tsc --noEmit"
